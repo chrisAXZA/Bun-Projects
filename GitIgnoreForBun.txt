@@ -1,0 +1,79 @@
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+.swcrc
+
+# zig
+zig-out
+zig-cache
+src/deps/zig-clap/example
+src/deps/zig-clap/README.md
+src/deps/zig-clap/.github
+src/deps/zig-clap/.gitattributes
+
+# bun
+*.bun
+bun-zigld
+bun-singlehtreaded
+bun-nomimalloc
+bun-mimalloc
+bun-binary
+packages/debug-*
+packages/bun-cli/postinstall.js
+packages/bun-*/bun
+packages/bun-*/bun-profile
+packages/bun-*/debug-bun
+packages/bun-*/*.o
+packages/bun-cli/postinstall.js
+examples/lotta-modules/bun-yday
+examples/lotta-modules/bun-old
+examples/lotta-modules/bun-nofscache
+packages/bun-wasm/*.mjs
+packages/bun-wasm/*.cjs
+packages/bun-wasm/*.map
+packages/bun-wasm/*.js
+packages/bun-wasm/*.d.ts
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+*.wasm
+*.o
+*.a
+profile.json
