@@ -5,3 +5,11 @@ export fn add(n1: i32, n2: i32) i32 {
 export fn square(n: i32) i32 {
     return n * n;
 }
+
+export fn fib(n: i32) i32 {
+    if (n <= 1) {
+        return n;
+    }
+
+    return fib(n - 1) + fib(n - 2);
+}
