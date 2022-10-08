@@ -8,5 +8,6 @@ const typedArray = new Uint8Array(source); // source passed to Uint array
 WebAssembly.instantiate(typedArray, {})
     .then((result) => {
         // console.log(result.instance.exports.square(2));
-        console.log(result.instance.exports.fib(8));
+        // console.log(result.instance.exports.fib(8));
+        console.log(result.instance.exports.calculate(10, 20));
     });
