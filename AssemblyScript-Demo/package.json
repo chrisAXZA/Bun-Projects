@@ -4,7 +4,11 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "node tests",
+        "asbuild:debug": "asc assembly/index.ts --target debug",
+        "asbuild:release": "asc assembly/index.ts --target release",
+        "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+        "start": "npx serve ."
     },
     "keywords": [],
     "author": "",
@@ -14,5 +18,12 @@
     },
     "devDependencies": {
         "assemblyscript": "^0.21.6"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./build/release.js",
+            "types": "./build/release.d.ts"
+        }
     }
 }
