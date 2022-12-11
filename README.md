@@ -2,4 +2,4 @@
 Small code projects implementing Bun.js + Zig
 
 <img src="vintageCoder.gif"/>
-<video src="BunJs.mp4"></video>
+<video src="BunJS.mp4"></video>
